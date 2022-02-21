@@ -9,10 +9,10 @@ export default initAuth0({
   routes: {
     callback:
       process.env.NEXT_PUBLIC_REDIRECT_URI ||
-      'http://localhost:3000/api/callback',
+      'https://sgweatherforecast.vercel.app/api/callback',
     postLogoutRedirect:
       process.env.NEXT_PUBLIC_POST_LOGOUT_REDIRECT_URI ||
-      'http://localhost:3000',
+      'https://sgweatherforecast.vercel.app',
   },
   authorizationParams: {
     response_type: 'code',
