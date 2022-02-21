@@ -1,8 +1,17 @@
 import type { NextPage } from "next";
-import styles from "../styles/Home.module.css";
+import { useFetchUser } from "../utils/user";
+import Router from 'next/router'
 
 const Home: NextPage = () => {
-  return <div className={styles.container}>Boilerplate</div>;
+  const { user } = useFetchUser()
+
+  if (user) {
+    Router.replace('/dashboard')
+  }
+
+  return <div>
+    <p>Please login to view forecast.</p>
+  </div>;
 };
 
 export default Home;
