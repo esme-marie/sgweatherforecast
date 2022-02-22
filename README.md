@@ -1,8 +1,45 @@
+# Singapore Weather Forecast App
+
+## Tech
+NextJs, Typescript, Auth0, GraphJs
+
+## External API
+[Singapore Weather Forecast](https://data.gov.sg/dataset/weather-forecast)
+
+## Deployed on
+[Vercel](https://sgweatherforecast.vercel.app/)
+
+## Web Flow
+### Login
+- A landing page inviting a user to login
+- A user can sign-up and login into app with email and password
+
+### Dashboard
+- Only logged in user can view dashboard
+- Dashboard automatically loads current day weather forecast for the next 4 days
+- Line chart shows high and low temperature forecast
+- Table displays weather forecast data
+- User can select earlier dates (depending on API data availability) and both line chart and table will automatically reflect data changes
+- If there is no data available on selected date, a message to prompt user to select another date will appear
+
+### Logout
+- User can logout from dashboard and will be directed back to landing page
+
+-----
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+To install project dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+To run the development server:
 
 ```bash
 npm run dev
