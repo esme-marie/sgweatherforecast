@@ -8,11 +8,9 @@ export default initAuth0({
   clientSecret: process.env.AUTH0_CLIENT_SECRET,
   routes: {
     callback:
-      process.env.NEXT_PUBLIC_REDIRECT_URI ||
-      'https://sgweatherforecast.vercel.app/api/callback',
+      process.env.NEXT_PUBLIC_REDIRECT_URI,
     postLogoutRedirect:
-      process.env.NEXT_PUBLIC_POST_LOGOUT_REDIRECT_URI ||
-      'https://sgweatherforecast.vercel.app',
+      process.env.NEXT_PUBLIC_POST_LOGOUT_REDIRECT_URI,
   },
   authorizationParams: {
     response_type: 'code',
