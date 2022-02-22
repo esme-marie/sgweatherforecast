@@ -1,12 +1,13 @@
-# Singapore Weather Forecast App
+# Singapore Weather Forecast
+A weather forecast web application
 
-## Tech
+### Tech
 NextJs, Typescript, Auth0, GraphJs
 
-## External API
+### External API
 [Singapore Weather Forecast](https://data.gov.sg/dataset/weather-forecast)
 
-## Deployed on
+### Deployed on
 [Vercel](https://sgweatherforecast.vercel.app/)
 
 ## Web Flow
