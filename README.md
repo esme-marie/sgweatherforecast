@@ -12,7 +12,7 @@ NextJs, Typescript, Auth0, GraphJs
 
 ## Web Flow
 ### Login
-- A landing page inviting a user to login
+- A landing page inviting user to login
 - A user can sign-up and login into app with email and password
 
 ### Dashboard
@@ -20,7 +20,7 @@ NextJs, Typescript, Auth0, GraphJs
 - Dashboard automatically loads current day weather forecast for the next 4 days
 - Line chart shows high and low temperature forecast
 - Table displays weather forecast data
-- User can select earlier dates (depending on API data availability) and both line chart and table will automatically reflect data changes
+- User can select forecast start date (depending on API data availability) and both line chart and table will automatically reflect data changes
 - If there is no data available on selected date, a message to prompt user to select another date will appear
 
 ### Logout
