@@ -51,6 +51,7 @@ table, th, td {
 
 .header {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .dashboard {
@@ -69,35 +70,26 @@ table, th, td {
   margin-left: auto;
 }
 
-.center {
+.center, .forecastlabel, .datepicker {
   text-align: center;
 }
 
 .startdate {
-  display: flex;
-  align-items: center;
-  width: 95%;
-  justify-content: center;
-  padding: 25px 25px 50px 25px;
-}
-
-.startdate div {
-  flex: 1;
-}
-
-.forecastlabel {
-  text-align: right;
-  margin-right: 10px;
+  display: block;
+  margin: auto;
 }
 
 .linechart {
   width: 95%;
-  padding: 50px 25px 25px 25px;
+  margin: auto;
+  padding: 50px 25px 25px 0px;
 }
 
 .table {
-  width: 95%;
-  padding: 50px 25px 50px 25px;
+  width: 90%;
+  margin: auto;
+  padding: 50px 25px 50px 0px;
+  overflow: auto;
 }
 
 #forecasts {
@@ -119,4 +111,15 @@ table, th, td {
   text-align: center;
   background-color: #87CEEB;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .forecastlabel {
+    width: 100%;
+  }
+
+  .datepicker {
+    width: 100%;
+  }
 }

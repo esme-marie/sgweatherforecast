@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     Router.replace('/dashboard')
   }
 
-  return <div>
+  return <div className="center">
     <p>Please login to view forecast.</p>
   </div>;
 };

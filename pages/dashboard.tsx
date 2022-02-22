@@ -100,8 +100,12 @@ const Dashboard:NextPage = () => {
     return (
         <div>
             <div className="startdate">
-                <div className="forecastlabel">Enter Forecast Start Date:</div>
-                <div><DatePicker dateFormat="yyyy-MM-dd" placeholderText="yyyy-MM-dd" selected={forecastDate} onChange={(date: any) => setForecastDate(date)} /></div>
+                <div className="forecastlabel bold">
+                    Enter Forecast Start Date:
+                </div>
+                <div className="datepicker">
+                    <DatePicker dateFormat="yyyy-MM-dd" placeholderText="yyyy-MM-dd" selected={forecastDate} onChange={(date: any) => setForecastDate(date)} />
+                </div>
             </div>
             <div className="linechart">
                 <canvas id="myChart" ref={canvasEl} height="100"></canvas>
